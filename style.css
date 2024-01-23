@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxanium", cursive;
+}
+
+body {
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-back {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
+    url(./img/Background.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+@media (max-width: 768px) {
+    .image-back {
+        padding-left: 0;
+    }
+}
+
+main {
+    position: relative;
+    display: inline-block; 
+    text-align: center;
+}
+
+.pokedex {
+    width: 85%;
+    max-width: 425px; 
+    z-index: 2;
+}
+
+.gif_pokemon {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 0);
+    height: 18%;
+}
+
+h1 {
+    display: flex;
+    max-width: 40%;
+    position: absolute;
+    font-size: 25px;
+    font-weight: 600;
+    bottom: 40%;
+    left: 45%;
+    transform: translate(-41%, 0);
+    color: #1c1d1d;
+    font-size: clamp(8px, 5vw, 25px);
+}
+
+.poke-name {
+    color: #1c1d1ddf;
+    text-shadow: 2px 2px 2px rgba(112, 109, 109, 0.8); /* Sombra com deslocamento de 2px horizontal e 2px vertical, borrão de 4px e cor branca com 80% de opacidade */
+}
+
+.poke-number {
+    color: #7b7a7ad3;
+    text-shadow: 2px 2px 2px rgba(36, 36, 36, 0.359);
+}
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+
+.input-search {
+    width: 93%;
+    padding: 4%;
+    margin-top: 3%;
+    margin-left: 1%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 14px);
+    box-shadow: -2px 3px 0 #888, -4px 5px 0 #292929;
+}
+
+.buttons {
+    display: flex;
+    position: absolute;
+    width: 55%;
+    height: 10%;
+    left: 18%;
+    top: 80%;
+    padding: 8px 6px;
+    gap: 25px;
+}
+
+.btn-previous { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 4%;
+    cursor: pointer;
+    font-size: clamp(8px, 5vw, 24px);
+    border: 2px solid #292929;
+    border-radius: 5px;
+    box-shadow: -2px 3px 0 #888, -4px 5px 0 #292929;
+}
+
+.btn-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 4%;
+    cursor: pointer;
+    font-size: clamp(8px, 5vw, 24px);
+    border: 2px solid #292929;
+    border-radius: 5px;
+    box-shadow: -2px 3px 0 #888, -4px 5px 0 #292929;
+} 
+
+ 
+.btn-next:active,
+.btn-previous:active {
+    box-shadow: inset -2px 1px 0px #888;
+    font-size: 20px;
+} 
