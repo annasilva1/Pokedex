@@ -68,7 +68,7 @@ h1 {
 
 .poke-name {
     color: #1c1d1ddf;
-    text-shadow: 2px 2px 2px rgba(112, 109, 109, 0.8); /* Sombra com deslocamento de 2px horizontal e 2px vertical, borrão de 4px e cor branca com 80% de opacidade */
+    text-shadow: 2px 2px 2px rgba(112, 109, 109, 0.8); 
 }
 
 .poke-number {
